@@ -1,7 +1,7 @@
 # phd_dissertation
 Dissertation related scripts including GTs list generation, differential expression, conservation, and more
 
-This repo houses scripts for each of the major sections of the dissertation project, including:
+This repo houses scripts for each of the major sections of the dissertation project, executed by shell wrappers in the following order:
   - gts_list: generation of the list of human glycosyltransferases (GTs)
   - diff_exp: summary analysis of DE for the GTs and enrichment of GTs and families in cancer
   - conservation: identification of GT orthologs in mouse and analysis of conserved expression profiles
