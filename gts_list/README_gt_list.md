@@ -6,8 +6,10 @@ The following steps are each accomplished by a single script, which are joined b
 NOTE: *** denotes some manual curation process was applied to that step
 
 ## CONFIGURATION
-1. Configure and create working and download directories 
-	- `gt_list_config.py` 
+1. Configure and create working and download directories. From this directory run: 
+	- `python gt_list_config.py` 
+	
+	This will create a set of working directories in `/working_dir_`
 
 ## DOWNLOADS
 2. Retrieve UniProt proteins with keyword 0328

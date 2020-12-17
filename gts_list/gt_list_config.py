@@ -1,28 +1,18 @@
-#Setup output directory for GT list generation downloads
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-
 
 import os
-
-####################################
-###                              ###
-### Assign variable for datetime ###
-###                              ###
-####################################
-
 from datetime import datetime
 
+# Assign variable for datetime
 today = datetime.now()
 timestring = today.strftime("%Y_%M_%D")
 now = today.strftime('%Y_%m_%d')
 
-###############################
-###			    ###
-### Make output directories ###
-###			    ###
-###############################
-
-working_path = "/home/hmhamilt/phd_dissertation/gts_list/"
+# Make output directories
+working_path = "../working_dir/gts_list"
 if not (os.path.exists(working_path)) :
-	os.mkdir(working_path)
+	os.makedirs(working_path)
 
 path_downloads = os.path.join(working_path,'downloads')
 if not (os.path.exists(path_downloads)) :
