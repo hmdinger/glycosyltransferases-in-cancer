@@ -15,7 +15,6 @@ import csv
 import json
 import urllib.request
 
-# import pandas as pd
 from pathlib import Path
 from datetime import datetime
 
@@ -412,7 +411,7 @@ def append():
     print('Appending additional annotations')
     go_canonical = os.path.join(DOWNLOADS, 'go_canonical.tsv')
     gts_master_final = os.path.join(DOWNLOADS, 'gts_with_evidence.tsv')
-    gts_append_go = os.path.join(WORKING_PATH, NOW, (NOW + '_final_gts_go.tsv'))
+    gts_append_go = os.path.join(WORKING_PATH, (NOW + '_final_gts_go.tsv'))
 
 
     print('GO')
