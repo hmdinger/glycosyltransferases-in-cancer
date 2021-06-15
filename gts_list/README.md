@@ -23,7 +23,7 @@ NOTE: *** denotes some manual curation process was applied to that step
 	- `cfg_map.py`
 
 5. Retrieve GO enzymes involved in sugar transfer using custom slim under 0016757 and reorder to make UniProtKB Ac first column***
-	- Manually curate to exclude transfer to/from non-protein substrates
+	- Manually curate to exclude transfer of sugars to/from non-glycoconjugates
 	- `go_custom_slim_0016757.py`
 	- `go_reorder.sh`
 
@@ -37,8 +37,7 @@ NOTE: *** denotes some manual curation process was applied to that step
 
 ## GENERATE FINAL TABLE
 1. Retrieve list of enzymes by UniProt keyword
-  - Columns should be: `uniprotkb_ac | protein_name | gene_name/gene_symbol | uniprotkb_kw`
-
+  	- Columns should be: `uniprotkb_ac | protein_name | gene_name/gene_symbol | uniprotkb_kw`
 2. Retrieve list of enzymes corresponding to slim
 	- Columns should be uniprotkb_ac | go | go_eco
 3. Retrieve CAZY list
@@ -51,11 +50,9 @@ NOTE: *** denotes some manual curation process was applied to that step
 6. Retrieve Pfam domains
 	- Columns should be uniprotkb_ac | pfam_domain
 	- NOTE: may require curation
-7. Retrieve Kelley Moremen's list
-	- Check GlyGen
-8. Retrieve Ensembl human GTs
-9. Retrieve Ensembl mouse GTs
-10. Retrieve 1:1 orthologs from OMA
+7. Retrieve Ensembl human GTs
+8. Retrieve Ensembl mouse GTs
+9. Retrieve 1:1 orthologs from OMA
 
 
 ## JOIN TABLES
@@ -63,18 +60,13 @@ NOTE: *** denotes some manual curation process was applied to that step
 Output and interim files will be hosted at /home/hmhamilt/phd_dissertation/gt_list_generation/generated 
 
 1. Join all tables using uniprotkb_ac as the key
-2. May need to manually add reactions
 
 
 ## MANUAL CURATION
 
-Final table will be hosted at /home/hmhamilt/phd_dissertation/gt_list_generation/generated/reviewed
-
-1. Review by Jeet/GlyGen
-2. Review by Will/Kelley?
-3. Review by Nathan?
+Final table will be hosted at /home/hmhamilt/phd_dissertation/gt_list_generation/generated/reviewed. Manual review and curation will be led by GlyGen team. 
 
 
 CHART GENERATION
 
-Charts and tables based on this information were generated for the publication using excel, ppt, R, etc.
+Charts and tables based on this information were generated for the publication using excel, ppt, R, and Lucid Charts.
