@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-                        ##Differnetial Expression##
+                        ##Differential Expression##
 """
 The following steps are each accomplished by a single script, which are joined 
 by a wrapper to execute all. More details for each step can be found commented 
