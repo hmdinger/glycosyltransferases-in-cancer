@@ -9,21 +9,23 @@ cd ${path_intermediate}
 
 pwd
 
+# clean whitespace
 sed -e 's/[\r\n]$//g' cancers.tsv > cancers_clean.tsv
 sed -e 's/[\r\n]$//g' gts.tsv > gts_clean.tsv
 
-
+# remove '-' from cancers
 cancers=$(<cancers_clean.tsv)
 delete=-
 echo ${cancers[@]/$delete}
 cancers=("${cancers[@]/$delete}")
+echo """${cancers[*]}"""
 
 gts=$(<gts_clean.tsv)
 
-echo """${cancers[*]}"""
+
 echo """${gts[*]}"""
 
-
+# copy and convert to TSV
 cp ${bioxpress_now}/BioXpress_interface_overall_final_v2.0.csv v2_copy.csv
 sed 's/,/\t/g' v2_copy.csv > v2_copy.tsv
 
